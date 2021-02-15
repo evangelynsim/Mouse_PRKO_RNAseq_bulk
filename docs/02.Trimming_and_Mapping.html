@@ -514,16 +514,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomevangelynsimMousePRKORNAseqbulktree72293cf81e0fbf052763802e15a3d3399907f49atargetblank72293cfa"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/tree/72293cf81e0fbf052763802e15a3d3399907f49a" target="_blank">72293cf</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomevangelynsimMousePRKORNAseqbulktree64af15b5dcdc8dbb31998a50e4627871ad54f4eftargetblank64af15ba"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/tree/64af15b5dcdc8dbb31998a50e4627871ad54f4ef" target="_blank">64af15b</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomevangelynsimMousePRKORNAseqbulktree72293cf81e0fbf052763802e15a3d3399907f49atargetblank72293cfa" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomevangelynsimMousePRKORNAseqbulktree64af15b5dcdc8dbb31998a50e4627871ad54f4eftargetblank64af15ba" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/tree/72293cf81e0fbf052763802e15a3d3399907f49a" target="_blank">72293cf</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/tree/64af15b5dcdc8dbb31998a50e4627871ad54f4ef" target="_blank">64af15b</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -580,6 +580,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/blob/64af15b5dcdc8dbb31998a50e4627871ad54f4ef/analysis/02.Trimming_and_Mapping.Rmd" target="_blank">64af15b</a>
+</td>
+<td>
+evangelynsim
+</td>
+<td>
+2021-02-16
+</td>
+<td>
+wflow_publish(“analysis/02.Trimming_and_Mapping.Rmd”)
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/d51f57f027860375537aefa40564de2174e7a58b/docs/02.Trimming_and_Mapping.html" target="_blank">d51f57f</a>
+</td>
+<td>
+evangelynsim
+</td>
+<td>
+2021-02-16
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -642,7 +676,7 @@ wflow_publish(c(“analysis/01.Generate_reference_genome.Rmd”,
 <h2>Introduction</h2>
 <p>Following sequencing and obtaining .fastq.gz file, the first step is to perform trimming and mapping of the sequencing data to generate bam files. All these steps were performed using bash code.</p>
 <p>Bam files were then used for read counts to generate a count matrix.</p>
-<p>Mouse PRKO bulk RNA-seq were performed using paiered end sequencing method and below are the scripts for trimming and mapping paired end sequencing read.</p>
+<p>Mouse PRKO bulk RNA-seq were performed using paired-end sequencing method and below are the scripts for trimming and mapping paired end sequencing read.</p>
 <div id="used-libraries-and-functions" class="section level3">
 <h3>Used libraries and functions</h3>
 <ul>
