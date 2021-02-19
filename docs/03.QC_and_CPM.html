@@ -28,6 +28,8 @@
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
 <link href="site_libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
 <script src="site_libs/anchor-sections-1.0/anchor-sections.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <link rel="icon" href="https://github.com/workflowr/workflowr-assets/raw/master/img/reproducible.png">
 <!-- Add a small amount of space between sections. -->
@@ -378,7 +380,13 @@ div.tocify {
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        
+        <li>
+  <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk">
+    <span class="fa fa-github"></span>
+     
+    Source code
+  </a>
+</li>
       </ul>
     </div><!--/.nav-collapse -->
   </div><!--/.container -->
@@ -415,7 +423,7 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-02-16
+<strong>Last updated:</strong> 2021-02-19
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 6 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 1
@@ -538,22 +546,23 @@ output/20200211_PRKO_RNA_samplesheet.txt
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrong7f1a156"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> 7f1a156 </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomevangelynsimMousePRKORNAseqbulktree0d16e754d9beba886fba38edbef3187e35d8931btargetblank0d16e75a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/tree/0d16e754d9beba886fba38edbef3187e35d8931b" target="_blank">0d16e75</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrong7f1a156" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomevangelynsimMousePRKORNAseqbulktree0d16e754d9beba886fba38edbef3187e35d8931btargetblank0d16e75a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version 7f1a156. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/tree/0d16e754d9beba886fba38edbef3187e35d8931b" target="_blank">0d16e75</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
 </p>
 <pre><code>
 Ignored files:
+    Ignored:    .Rhistory
     Ignored:    .Rproj.user/
 
 Untracked files:
@@ -565,9 +574,6 @@ Untracked files:
     Untracked:  output/mrna_fulllen_pe_strrev_q30.mx.PRKO.all.fix_filt
     Untracked:  output/mrna_fulllen_pe_strrev_q30.mx.PRKO.unfiltered
     Untracked:  output/mrna_fulllen_pe_strrev_q30.mx.chr
-
-Unstaged changes:
-    Modified:   analysis/index.Rmd
 
 </code></pre>
 <p>
@@ -608,10 +614,27 @@ Message
 <tbody>
 <tr>
 <td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/440019f02401b3a8f1d84a4f32d8b8874d57da70/docs/03.QC_and_CPM.html" target="_blank">440019f</a>
+</td>
+<td>
+evangelynsim
+</td>
+<td>
+2021-02-16
+</td>
+<td>
+Build site.
+</td>
+</tr>
+<tr>
+<td>
 Rmd
 </td>
 <td>
-7f1a156
+<a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/blob/7f1a156b5502ee3dc2d8169f5291f4cbb2c4902c/analysis/03.QC_and_CPM.Rmd" target="_blank">7f1a156</a>
 </td>
 <td>
 evangelynsim
@@ -706,9 +729,83 @@ write.csv(logcountsx, &quot;logCPM_mrna_fulllen_pe_strrev_q30.mx.PRKO.all.fix_fi
 
 barplot(x$samples$lib.size, names=colnames(x), las=2, col = c(&quot;maroon1&quot;,&quot;turquoise1&quot;,&quot;red&quot;,&quot;royalblue1&quot;)[info$BinSex], main = &quot;Library size&quot;)</code></pre>
 <p><img src="figure/03.QC_and_CPM.Rmd/unnamed-chunk-2-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-2-1">
+Past versions of unnamed-chunk-2-1.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-2-1" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/blob/440019f02401b3a8f1d84a4f32d8b8874d57da70/docs/figure/03.QC_and_CPM.Rmd/unnamed-chunk-2-1.png" target="_blank">440019f</a>
+</td>
+<td>
+evangelynsim
+</td>
+<td>
+2021-02-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <pre class="r"><code>boxplot(logcountsx, xlab=&quot;&quot;, ylab=&quot;Log2 counts per million&quot;, las=2, col = c(&quot;maroon1&quot;,&quot;turquoise1&quot;,&quot;red&quot;,&quot;royalblue1&quot;)[info$BinSex])
 abline(h=median(logcountsx), col=&quot;navy&quot;)</code></pre>
 <p><img src="figure/03.QC_and_CPM.Rmd/unnamed-chunk-2-2.png" width="672" style="display: block; margin: auto;" /></p>
+<p>
+<button type="button" class="btn btn-default btn-xs btn-workflowr btn-workflowr-fig" data-toggle="collapse" data-target="#fig-unnamed-chunk-2-2">
+Past versions of unnamed-chunk-2-2.png
+</button>
+</p>
+<div id="fig-unnamed-chunk-2-2" class="collapse">
+<div class="table-responsive">
+<table class="table table-condensed table-hover">
+<thead>
+<tr>
+<th>
+Version
+</th>
+<th>
+Author
+</th>
+<th>
+Date
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/blob/440019f02401b3a8f1d84a4f32d8b8874d57da70/docs/figure/03.QC_and_CPM.Rmd/unnamed-chunk-2-2.png" target="_blank">440019f</a>
+</td>
+<td>
+evangelynsim
+</td>
+<td>
+2021-02-16
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 <br>
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-sessioninfo" data-toggle="collapse" data-target="#workflowr-sessioninfo" style="display: block;">

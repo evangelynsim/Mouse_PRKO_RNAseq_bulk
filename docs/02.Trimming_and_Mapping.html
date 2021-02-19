@@ -423,7 +423,7 @@ div.tocify {
 <div class="tab-content">
 <div id="summary" class="tab-pane fade in active">
 <p>
-<strong>Last updated:</strong> 2021-02-16
+<strong>Last updated:</strong> 2021-02-19
 </p>
 <p>
 <strong>Checks:</strong> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 7 <span class="glyphicon glyphicon-exclamation-sign text-danger" aria-hidden="true"></span> 0
@@ -514,16 +514,16 @@ This reproducible <a href="http://rmarkdown.rstudio.com">R Markdown</a> analysis
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomevangelynsimMousePRKORNAseqbulktree64af15b5dcdc8dbb31998a50e4627871ad54f4eftargetblank64af15ba"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/tree/64af15b5dcdc8dbb31998a50e4627871ad54f4ef" target="_blank">64af15b</a> </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomevangelynsimMousePRKORNAseqbulktree0d16e754d9beba886fba38edbef3187e35d8931btargetblank0d16e75a"> <span class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> <strong>Repository version:</strong> <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/tree/0d16e754d9beba886fba38edbef3187e35d8931b" target="_blank">0d16e75</a> </a>
 </p>
 </div>
-<div id="strongRepositoryversionstrongahrefhttpsgithubcomevangelynsimMousePRKORNAseqbulktree64af15b5dcdc8dbb31998a50e4627871ad54f4eftargetblank64af15ba" class="panel-collapse collapse">
+<div id="strongRepositoryversionstrongahrefhttpsgithubcomevangelynsimMousePRKORNAseqbulktree0d16e754d9beba886fba38edbef3187e35d8931btargetblank0d16e75a" class="panel-collapse collapse">
 <div class="panel-body">
 <p>
 Great! You are using Git for version control. Tracking code development and connecting the code version to the results is critical for reproducibility.
 </p>
 <p>
-The results in this page were generated with repository version <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/tree/64af15b5dcdc8dbb31998a50e4627871ad54f4ef" target="_blank">64af15b</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
+The results in this page were generated with repository version <a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/tree/0d16e754d9beba886fba38edbef3187e35d8931b" target="_blank">0d16e75</a>. See the <em>Past versions</em> tab to see a history of the changes made to the R Markdown and HTML files.
 </p>
 <p>
 Note that you need to be careful to ensure that all relevant files for the analysis have been committed to Git prior to generating the results (you can use <code>wflow_publish</code> or <code>wflow_git_commit</code>). workflowr only checks the R Markdown file, but you know if there are other scripts or data files that it depends on. Below is the status of the Git repository when the results were generated:
@@ -580,6 +580,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/blob/0d16e754d9beba886fba38edbef3187e35d8931b/analysis/02.Trimming_and_Mapping.Rmd" target="_blank">0d16e75</a>
+</td>
+<td>
+evangelynsim
+</td>
+<td>
+2021-02-19
+</td>
+<td>
+wflow_publish(c(“analysis/01.Generate_reference_genome.Rmd”,
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/evangelynsim/Mouse_PRKO_RNAseq_bulk/7a66612e7094839ce0bcc62c0b4fe0997c3a8c96/docs/02.Trimming_and_Mapping.html" target="_blank">7a66612</a>
+</td>
+<td>
+evangelynsim
+</td>
+<td>
+2021-02-16
+</td>
+<td>
+Build site.
+</td>
+</tr>
 <tr>
 <td>
 Rmd
@@ -787,7 +821,7 @@ wait
 <div id="filter-out-low-counts-genes-from-matrix" class="section level3">
 <h3>Filter out low counts genes from matrix</h3>
 <p>Filtering out low counts genes by running the following filter.sh as</p>
-<p>bash filter.sh hrna_dev_mf_fulllen_se_strrev_q30.mx.all.fix</p>
+<p>bash filter.sh mrna_fulllen_pe_strrev_q30.mx</p>
 <p>filter.sh</p>
 <pre><code>head -1 $1 &gt; ${1}_filt
 awk &#39;{
